@@ -76,7 +76,7 @@ void _socks_socket_callback(struct ev_loop *loop, struct ev_io *watcher, int rev
 	if(socket->_stoped){
 		return;
 	}
-	LOG(LEVEL_INFORM,"handle event %d",revents);
+	//LOG(LEVEL_INFORM,"handle event %d",revents);
 	handler(socket,revents);
 	/*if(socket->_connecting){
 		if(revents & EV_ERROR){
